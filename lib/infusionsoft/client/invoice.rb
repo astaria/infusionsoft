@@ -162,7 +162,7 @@ module Infusionsoft
       # @param [Integer] invoice_id
       # @return [Array<Hash>] returns an array of payments
       def invoice_get_payments(invoice_id)
-        response = get('Invoice.getPayments', invoice_id)
+        response = get('InvoiceService.getPayments', invoice_id)
       end
 
       # Locates an existing card in the system for a contact, using the last 4 digits.
